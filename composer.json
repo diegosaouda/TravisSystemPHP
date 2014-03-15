@@ -1,0 +1,15 @@
+{
+    "name": "travis/teste",
+	"autoload": {
+		"psr-0": { "System\\": "src/" }
+	},
+    "require": {
+        "phpunit/phpunit": "*"
+    },
+    "authors": [
+        {
+            "name": "Diego Saouda",
+            "email": "diegosaouda@gmail.com"
+        }
+    ]
+}
