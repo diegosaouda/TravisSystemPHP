@@ -6,5 +6,5 @@ use InvalidArgumentException;
 
 class NotIsAStringException extends InvalidArgumentException
 {
-	
+
 }
