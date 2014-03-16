@@ -1,6 +1,9 @@
 vendor/
 composer.lock
-build/logs/*
-!build/logs/.gitkeep
-build/coverage/*
-!build/coverage/.gitkeep
+build/api
+build/code-browser
+build/coverage
+build/logs
+build/pdepend
+build/phpdox
+cache.properties
