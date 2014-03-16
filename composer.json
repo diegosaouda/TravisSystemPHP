@@ -4,7 +4,13 @@
 		"psr-0": { "System\\": "src/" }
 	},
     "require": {
-        "phpunit/phpunit": "*"
+        "satooshi/php-coveralls": "*",
+        "phpunit/phpunit": "*",
+        "phpmd/phpmd" : "*",
+        "fabpot/php-cs-fixer": "*",
+        "sebastian/phpdcd": "*",
+        "sebastian/phpcpd": "*",
+	"phploc/phploc": "*"
     },
     "authors": [
         {
