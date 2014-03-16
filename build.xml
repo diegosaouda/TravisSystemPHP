@@ -2,7 +2,7 @@
 
 <project name="Jenkins PHP" default="build">
  <target name="build"
-   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit"/>
+   depends="prepare,lint,composerSelfUpdate,composerUpdate,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit"/>
 
  <target name="build-parallel"
    depends="prepare,lint,tools-parallel,phpunit"/>
@@ -51,6 +51,18 @@
   </apply>
  </target>
 
+ <target name="composerSelfUpdate" description="Composer self-update">
+  <exec executable="${basedir}/composer.phar">
+   <arg value="self-update" />
+  </exec>
+ </target>
+ 
+ <target name="composerUpdate" description="Composer update">
+  <exec executable="${basedir}/composer.phar">
+   <arg value="update" />
+  </exec>
+ </target>
+ 
  <target name="phploc" description="Measure project size using PHPLOC">
   <exec executable="vendor/bin/phploc">
    <arg value="--log-csv" />
