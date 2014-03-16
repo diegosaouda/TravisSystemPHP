@@ -2,3 +2,5 @@ vendor/
 composer.lock
 build/logs/*
 !build/logs/.gitkeep
+build/coverage/*
+!build/coverage/.gitkeep
