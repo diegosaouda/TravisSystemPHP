@@ -15,7 +15,7 @@ class StringTest extends \PHPUnit_Framework_TestCase
 
     public function testLowerCase()
     {
-        $value = (new String('TESTE PHP STRIN'))->toLowerCase();
+        $value = (new String('TESTE PHP STRING'))->toLowerCase();
         $this->assertEquals('teste php string', $value);
     }
 
