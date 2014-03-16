@@ -70,5 +70,4 @@ class String
     {
         return $this->value;
     }
-
 }
