@@ -31,9 +31,6 @@ class StringTest extends \PHPUnit_Framework_TestCase
     {
     }
 
-    /**
-     * @expectedException \System\Exception\String\NotIsAStringException
-     */
     public function testNotIsAStringException()
     {
     }
